@@ -28,14 +28,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="contact-page">
@@ -57,10 +49,14 @@
       </nav>
 
       <div class="header-social-links">
-        <a href="https://www.linkedin.com/in/hamzakhader/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/EngHamzaKhader" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
-        <a href="https://mavenshowcase.com/profile/e8819380-20d1-70f8-aade-f2713e0b28ca" target="_blank" rel="noopener noreferrer"><i class="bi bi-briefcase"></i></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.hamzakhader@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/hamzakhader/" target="_blank" rel="noopener noreferrer"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/EngHamzaKhader" target="_blank" rel="noopener noreferrer"><i
+            class="bi bi-github"></i></a>
+        <a href="https://mavenshowcase.com/profile/e8819380-20d1-70f8-aade-f2713e0b28ca" target="_blank"
+          rel="noopener noreferrer"><i class="bi bi-briefcase"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.hamzakhader@gmail.com" target="_blank"
+          rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
         <a href="https://wa.me/447861191444" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
       </div>
 
@@ -72,18 +68,16 @@
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row g-4 g-lg-5">
           <div class="col-lg-5">
             <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-              <h3>Contact Info</h3>
-              <br>
+              <h3>Contact Info</h3><br>
               <div class="info-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
@@ -120,7 +114,8 @@
             <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
               <h3>Get In Touch</h3>
 
-              <form action="https://formsubmit.co/eng.hamzakhader@gmail.com" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <!-- EmailJS Form -->
+              <form id="contact-form" data-aos="fade-up" data-aos-delay="200">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
@@ -157,7 +152,7 @@
 
       </div>
 
-    </section><!-- /Contact Section -->
+    </section>
 
   </main>
 
@@ -170,10 +165,13 @@
       </div>
 
       <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/hamzakhader/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/hamzakhader/" target="_blank" rel="noopener noreferrer"><i
+            class="bi bi-linkedin"></i></a>
         <a href="https://github.com/EngHamzaKhader" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
-        <a href="https://mavenshowcase.com/profile/e8819380-20d1-70f8-aade-f2713e0b28ca" target="_blank" rel="noopener noreferrer"><i class="bi bi-briefcase"></i></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.hamzakhader@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
+        <a href="https://mavenshowcase.com/profile/e8819380-20d1-70f8-aade-f2713e0b28ca" target="_blank"
+          rel="noopener noreferrer"><i class="bi bi-briefcase"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.hamzakhader@gmail.com" target="_blank"
+          rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
         <a href="https://wa.me/447861191444" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
       </div>
 
@@ -193,7 +191,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
@@ -202,6 +199,39 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- EmailJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("tPkYWp3yeHladBwrC"); // User ID
+    })();
+
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const loading = form.querySelector('.loading');
+      const error = form.querySelector('.error-message');
+      const sent = form.querySelector('.sent-message');
+
+      loading.style.display = 'block';
+      error.style.display = 'none';
+      sent.style.display = 'none';
+
+      emailjs.sendForm('default_service', 'template_oz7q0vt', this)
+        .then(() => {
+          loading.style.display = 'none';
+          sent.style.display = 'block';
+          form.reset();
+        }, (err) => {
+          loading.style.display = 'none';
+          error.style.display = 'block';
+          error.innerText = "Oops! Something went wrong. Please try again.";
+          console.error(err);
+        });
+    });
+  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

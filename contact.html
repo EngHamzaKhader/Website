@@ -135,9 +135,9 @@
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <div class="loading" style="display:none;">Loading</div>
+                    <div class="error-message" style="display:none;"></div>
+                    <div class="sent-message" style="display:none;">Your message has been sent. Thank you!</div>
 
                     <button type="submit" class="btn">Send Message</button>
                   </div>
@@ -219,7 +219,7 @@
       error.style.display = 'none';
       sent.style.display = 'none';
 
-      emailjs.sendForm('default_service', 'template_oz7q0vt', this)
+      emailjs.sendForm('YOUR_SERVICE_ID', 'template_oz7q0vt', this)
         .then(() => {
           loading.style.display = 'none';
           sent.style.display = 'block';

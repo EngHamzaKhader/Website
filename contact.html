@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -28,6 +28,37 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("tPkYWp3yeHladBwrC"); // Public key
+    })();
+
+    function sendEmail(event) {
+      event.preventDefault();
+      document.querySelector(".loading").style.display = "block";
+      document.querySelector(".error-message").style.display = "none";
+      document.querySelector(".sent-message").style.display = "none";
+
+      emailjs.sendForm(
+        "eng.hamzakhader@gmail.co", // Service ID
+        "template_oz7q0vt", // Template ID
+        event.target
+      ).then(() => {
+        document.querySelector(".loading").style.display = "none";
+        document.querySelector(".sent-message").style.display = "block";
+        event.target.reset();
+      }).catch((error) => {
+        console.error("EmailJS Error:", error);
+        document.querySelector(".loading").style.display = "none";
+        document.querySelector(".error-message").innerHTML = "Failed to send message. Please try again.";
+        document.querySelector(".error-message").style.display = "block";
+      });
+    }
+  </script>
+
 </head>
 
 <body class="contact-page">
@@ -49,15 +80,11 @@
       </nav>
 
       <div class="header-social-links">
-        <a href="https://www.linkedin.com/in/hamzakhader/" target="_blank" rel="noopener noreferrer"><i
-            class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/EngHamzaKhader" target="_blank" rel="noopener noreferrer"><i
-            class="bi bi-github"></i></a>
-        <a href="https://mavenshowcase.com/profile/e8819380-20d1-70f8-aade-f2713e0b28ca" target="_blank"
-          rel="noopener noreferrer"><i class="bi bi-briefcase"></i></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.hamzakhader@gmail.com" target="_blank"
-          rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
-        <a href="https://wa.me/447861191444" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/hamzakhader/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/EngHamzaKhader" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://mavenshowcase.com/profile/e8819380-20d1-70f8-aade-f2713e0b28ca" target="_blank"><i class="bi bi-briefcase"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.hamzakhader@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+        <a href="https://wa.me/447861191444" target="_blank"><i class="bi bi-whatsapp"></i></a>
       </div>
 
     </div>
@@ -77,7 +104,8 @@
         <div class="row g-4 g-lg-5">
           <div class="col-lg-5">
             <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-              <h3>Contact Info</h3><br>
+              <h3>Contact Info</h3>
+              <br>
               <div class="info-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
@@ -114,34 +142,32 @@
             <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
               <h3>Get In Touch</h3>
 
-              <!-- EmailJS Form -->
-              <form id="contact-form" data-aos="fade-up" data-aos-delay="200">
+              <form id="contact-form" onsubmit="sendEmail(event)" class="php-email-form" data-aos="fade-up"
+                data-aos-delay="200">
                 <div class="row gy-4">
-
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    <input type="text" name="from_name" class="form-control" placeholder="Your Name" required>
                   </div>
 
                   <div class="col-md-6">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    <input type="email" class="form-control" name="from_email" placeholder="Your Email" required>
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading" style="display:none;">Loading</div>
+                    <div class="loading" style="display:none;">Loading...</div>
                     <div class="error-message" style="display:none;"></div>
                     <div class="sent-message" style="display:none;">Your message has been sent. Thank you!</div>
 
                     <button type="submit" class="btn">Send Message</button>
                   </div>
-
                 </div>
               </form>
 
@@ -153,40 +179,32 @@
       </div>
 
     </section>
-
   </main>
 
   <footer id="footer" class="footer">
-
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Hamza Analytics 2025</strong> <span>All Rights Reserved<br></span>
-        </p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Hamza Analytics 2025</strong> <span>All Rights Reserved</span></p>
       </div>
 
       <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/hamzakhader/" target="_blank" rel="noopener noreferrer"><i
-            class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/EngHamzaKhader" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
-        <a href="https://mavenshowcase.com/profile/e8819380-20d1-70f8-aade-f2713e0b28ca" target="_blank"
-          rel="noopener noreferrer"><i class="bi bi-briefcase"></i></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.hamzakhader@gmail.com" target="_blank"
-          rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
-        <a href="https://wa.me/447861191444" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/hamzakhader/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/EngHamzaKhader" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://mavenshowcase.com/profile/e8819380-20d1-70f8-aade-f2713e0b28ca" target="_blank"><i class="bi bi-briefcase"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.hamzakhader@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+        <a href="https://wa.me/447861191444" target="_blank"><i class="bi bi-whatsapp"></i></a>
       </div>
 
       <div class="credits">
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
@@ -199,39 +217,6 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- EmailJS Script -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    (function() {
-      emailjs.init("tPkYWp3yeHladBwrC"); // User ID
-    })();
-
-    const form = document.getElementById('contact-form');
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      const loading = form.querySelector('.loading');
-      const error = form.querySelector('.error-message');
-      const sent = form.querySelector('.sent-message');
-
-      loading.style.display = 'block';
-      error.style.display = 'none';
-      sent.style.display = 'none';
-
-      emailjs.sendForm('YOUR_SERVICE_ID', 'template_oz7q0vt', this)
-        .then(() => {
-          loading.style.display = 'none';
-          sent.style.display = 'block';
-          form.reset();
-        }, (err) => {
-          loading.style.display = 'none';
-          error.style.display = 'block';
-          error.innerText = "Oops! Something went wrong. Please try again.";
-          console.error(err);
-        });
-    });
-  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

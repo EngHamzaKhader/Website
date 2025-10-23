@@ -1,0 +1,258 @@
+
+            <!-- Certificate 7 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ds">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/Certifications/Classification.png" alt="Business Growth Strategy Certificate" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <!-- Opens image inside site -->
+                    <a href="assets/img/Certifications/Classification.png" 
+                       class="glightbox portfolio-lightbox" 
+                       data-gallery="cert-gallery" 
+                       title="Business Growth Strategy Certificate">
+                      <i class="bi bi-plus"></i>
+                    </a>
+                    <!-- External link to Maven -->
+                    <a href="https://certificates.mavenanalytics.io/524cee3e-6f7a-4e68-be71-e86eab724729#acc.QDAxBqsJ" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="portfolio-details-link">
+                      <i class="bi bi-link"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Business Growth Strategy</h4>
+                  <p>Strategic Planning</p>
+                  <div class="portfolio-tags">
+                    <span>Strategy</span>
+                    <span>Consulting</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate 8 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tools">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-2.webp" alt="Financial Restructuring Certificate" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-2.webp" 
+                       class="glightbox portfolio-lightbox" 
+                       data-gallery="cert-gallery" 
+                       title="Financial Restructuring Certificate">
+                      <i class="bi bi-plus"></i>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/EXAMPLE" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="portfolio-details-link">
+                      <i class="bi bi-link"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Financial Restructuring</h4>
+                  <p>Financial Advisory</p>
+                  <div class="portfolio-tags">
+                    <span>Finance</span>
+                    <span>Investment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate 9 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-domain">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-3.webp" alt="Supply Chain Optimization Certificate" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-3.webp" 
+                       class="glightbox portfolio-lightbox" 
+                       data-gallery="cert-gallery" 
+                       title="Supply Chain Optimization Certificate">
+                      <i class="bi bi-plus"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Supply Chain Optimization</h4>
+                  <p>Operations Management</p>
+                  <div class="portfolio-tags">
+                    <span>Operations</span>
+                    <span>Logistics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate 10 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-domain">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-4.webp" alt="Digital Transformation Certificate" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-4.webp" 
+                       class="glightbox portfolio-lightbox" 
+                       data-gallery="cert-gallery" 
+                       title="Digital Transformation Certificate">
+                      <i class="bi bi-plus"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Digital Transformation</h4>
+                  <p>Technology Consulting</p>
+                  <div class="portfolio-tags">
+                    <span>Technology</span>
+                    <span>Innovation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate 11 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-5.webp" alt="Market Expansion Certificate" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-5.webp" 
+                       class="glightbox portfolio-lightbox" 
+                       data-gallery="cert-gallery" 
+                       title="Market Expansion Certificate">
+                      <i class="bi bi-plus"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Market Expansion</h4>
+                  <p>Strategic Planning</p>
+                  <div class="portfolio-tags">
+                    <span>Strategy</span>
+                    <span>Growth</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate 12 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Investment Strategy Certificate" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-6.webp" 
+                       class="glightbox portfolio-lightbox" 
+                       data-gallery="cert-gallery" 
+                       title="Investment Strategy Certificate">
+                      <i class="bi bi-plus"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Investment Strategy</h4>
+                  <p>Financial Advisory</p>
+                  <div class="portfolio-tags">
+                    <span>Finance</span>
+                    <span>Investment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate 13 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ds">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/Certifications/Classification.png" alt="Business Growth Strategy Certificate" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <!-- Opens image inside site -->
+                    <a href="assets/img/Certifications/Classification.png" 
+                       class="glightbox portfolio-lightbox" 
+                       data-gallery="cert-gallery" 
+                       title="Business Growth Strategy Certificate">
+                      <i class="bi bi-plus"></i>
+                    </a>
+                    <!-- External link to Maven -->
+                    <a href="https://certificates.mavenanalytics.io/524cee3e-6f7a-4e68-be71-e86eab724729#acc.QDAxBqsJ" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="portfolio-details-link">
+                      <i class="bi bi-link"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Business Growth Strategy</h4>
+                  <p>Strategic Planning</p>
+                  <div class="portfolio-tags">
+                    <span>Strategy</span>
+                    <span>Consulting</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate 14 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tools">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-2.webp" alt="Financial Restructuring Certificate" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-2.webp" 
+                       class="glightbox portfolio-lightbox" 
+                       data-gallery="cert-gallery" 
+                       title="Financial Restructuring Certificate">
+                      <i class="bi bi-plus"></i>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/EXAMPLE" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="portfolio-details-link">
+                      <i class="bi bi-link"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Financial Restructuring</h4>
+                  <p>Financial Advisory</p>
+                  <div class="portfolio-tags">
+                    <span>Finance</span>
+                    <span>Investment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate 15 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-domain">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-3.webp" alt="Supply Chain Optimization Certificate" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-3.webp" 
+                       class="glightbox portfolio-lightbox" 
+                       data-gallery="cert-gallery" 
+                       title="Supply Chain Optimization Certificate">
+                      <i class="bi bi-plus"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Supply Chain Optimization</h4>
+                  <p>Operations Management</p>
+                  <div class="portfolio-tags">
+                    <span>Operations</span>
+                    <span>Logistics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
